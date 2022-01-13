@@ -1,7 +1,7 @@
 {
   "name": "@hashiprobr/expo-use-picker",
-  "version": "1.0.1",
-  "description": "TODO",
+  "version": "1.0.2",
+  "description": "A React Hook for simplifying basic usage of expo-document-picker",
   "keywords": [
     "JavaScript",
     "React",
