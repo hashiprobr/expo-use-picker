@@ -1,12 +1,5 @@
-import 'react-native-get-random-values';
-
-import { nanoid } from 'nanoid';
-
 import { useState } from 'react';
 
-import { Platform } from 'react-native';
-
-import * as FileSystem from 'expo-file-system';
 import * as DocumentPicker from 'expo-document-picker';
 
 export default function usePicker() {
@@ -19,18 +12,10 @@ export default function usePicker() {
         if (type) {
             options.type = type;
         }
-        if (Platform.OS === 'android') {
-            options.copyToCacheDirectory = false;
-        }
         try {
             const result = await DocumentPicker.getDocumentAsync(options);
             if (result.type !== 'cancel') {
-                if (Platform.OS === 'android') {
-                    uri = `${FileSystem.cacheDirectory}${nanoid()}`;
-                    await FileSystem.copyAsync({ from: result.uri, to: uri });
-                } else {
-                    uri = result.uri;
-                }
+                uri = result.uri;
             }
         } finally {
             setLoading(false);

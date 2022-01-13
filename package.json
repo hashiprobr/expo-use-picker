@@ -1,6 +1,6 @@
 {
   "name": "@hashiprobr/expo-use-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TODO",
   "keywords": [
     "JavaScript",
@@ -28,10 +28,7 @@
   "peerDependencies": {
     "expo": "^43.0.5",
     "expo-document-picker": "^10.0.3",
-    "expo-file-system": "^13.0.3",
-    "nanoid": "^3.1.32",
     "react": "^17.0.1",
-    "react-native": ">=0.64.3",
-    "react-native-get-random-values": "^1.7.2"
+    "react-native": ">=0.64.3"
   }
 }
