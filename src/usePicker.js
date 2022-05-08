@@ -14,7 +14,9 @@ export default function usePicker() {
         }
         try {
             const result = await DocumentPicker.getDocumentAsync(options);
-            if (result.type !== 'cancel') {
+            if (result.type === 'cancel') {
+                uri = null;
+            } else {
                 uri = result.uri;
             }
         } finally {
