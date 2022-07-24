@@ -18,10 +18,10 @@ Peer dependencies
 
 ``` json
 {
-    "expo": "^43.0.5",
-    "expo-document-picker": "^10.0.3",
-    "react": "^17.0.1",
-    "react-native": ">=0.64.3"
+    "expo": "45.0.0",
+    "expo-document-picker": "10.2.1",
+    "react": "17.0.2",
+    "react-native": "0.68.2"
 }
 ```
 
