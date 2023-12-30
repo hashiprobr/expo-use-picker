@@ -1,6 +1,8 @@
 expo-use-picker
 ===============
 
+[PROJECT DISCONTINUED]
+
 **A React Hook for simplifying basic usage of
 [expo-document-picker](https://docs.expo.dev/versions/latest/sdk/document-picker/)**
 
